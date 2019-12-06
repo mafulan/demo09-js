@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    
+    <style>
+        .parent{
+            width: 735px;
+            height: 420px;
+            background-color: #efefef;
+            margin: 0 auto;
+            padding: 25px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .parent p{
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            
+        }
+        .parent #btn1{
+            width: 100px;
+            height: 40px;
+            border: none;
+            padding: 0;
+            color: white;
+            font-size: 14px;
+            background-color: red;
+            cursor: pointer;
+           
+            
+           
+            
+        }
+        .parent #div1{
+            width: 100px;
+            height: 100px;
+            border: 4px  #393129  solid;
+            background-color: white;
+        }
+        .parent #div2{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            position:absolute;
+            left:0;
+            top: 0;
+            display: none; 
+
+
+        }
+        .ctrl{
+            position:absolute;
+            right: 25px;
+            bottom: 30px;
+            width: 340px;
+            height: 240px;
+            box-sizing: border-box;
+            border: 20px  #9c949c  solid;
+            background-color: white;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            padding-left: 34px;
+
+        }
+        .crtl div{
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 5px;
+           
+
+        }
+        .ctrl  div:nth-last-child(1){
+            margin-top: 21px;
+            margin-left: 68px;
+        }
+        .ctrl div button{
+            width: 36px;
+            height: 32px;
+            margin-bottom: 5px;
+        
+            box-sizing: border-box;
+
+        }
+        #color1{
+        background-color: red;
+        color: white;
+        font-size: 14px;
+        border: none;
+        padding: 0;
+        margin-left: 5px;
+    }
+    #color2{
+        background-color: yellow;
+        color: white;
+        font-size: 14px;
+        border: none;
+        padding: 0;
+        margin-left: 5px;
+    }
+    #color3{
+        background-color: blue;
+        color: white;
+        font-size: 14px;
+        border: none;
+        padding: 0;
+        margin-left: 5px;
+    }
+    #width1,#width2,#width3,#height1,#height2,#height3{
+        background-color: #efefef;
+        border: 1px #c0c0c0 solid;
+        color: #808080;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    #width1,#width2,#width3,#height1,#height2,#height3{
+        background-color: #efefef;
+        border: 1px #c0c0c0 solid;
+        color: #808080;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    #btn2,#btn3{
+        width: 60px;
+        height: 30px;
+        background-color: #002952;
+        color: white;
+       
+    }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>请为下面的div设置样式:<button id="btn1">点击设置</button>
+        </p>
+        
+        <div id="div1"></div>
+        <div id="div2">
+                <div class="ctrl">
+                        <div>请选择背景色：<button id="color1">红</button><button id="color2">黄</button><button id="color3">蓝</button></div>
+                        <div>请选择宽(px)：<button id="width1">150</button><button id="width2">200</button><button id="width3">250</button></div>
+                        <div>请选择高(px)：<button id="height1">150</button><button id="height2">200</button><button id="height3">250</button></div>
+                        <div><button id="btn2">恢复</button><button id="btn3">确定</button></div>
+                    </div>
+        </div>
+
+    </div>
+    <script src="js/self.js"></script>
+</body>
+</html>
