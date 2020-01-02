@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1"/>
+    <button id="btn">弹出内容</button>
+    <script>
+    var oText = document.getElementById("t1");
+    var oBtn = document.getElementById("btn");
+    // 点击按钮的时候输出输入框的值
+    oBtn.onclick = function (){
+        alert(oText.value);
+    }
+    </script>
+</body>
+</html>
